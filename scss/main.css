@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.logo {
+  width: 110px;
+  padding: 0px;
+}
+
+.container-fluid {
+  background-color: #02AFFE;
+}
+
+.header {
+  grid-area: header;
+  background-color: #02AFFE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px 0px 0px;
+}
+.header nav {
+  padding-right: 0.15;
+}
+.header nav ul {
+  display: flex;
+  list-style: none;
+}
+.header nav ul li a {
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  border-right: 1px solid #9c1ede;
+  font-size: 1.35rem;
+}
+
+.main {
+  grid-area: main;
+  background-color: #141D3C;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.main__index .filtros {
+  background-color: #f8af40;
+  align-items: center;
+  justify-content: space-evenly;
+  max-height: 300px;
+  width: 100%;
+  color: #000;
+  font-weight: 650;
+  font-size: 0.8rem;
+  display: flex;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin-top: 0.3rem;
+}
+.main__index .filtros .filtro_1 {
+  padding: 0.2rem;
+}
+.main__index .filtros .filtro_1 h5 {
+  font-size: 1rem;
+}
+.main__index .filtros .filtro_2 {
+  padding: 0.2rem;
+}
+.main__index .filtros .filtro_2 h5 {
+  font-size: 1rem;
+}
+.main__index .filtros button {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  max-height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside_container {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-evenly;
+  margin-bottom: 0.3rem;
+}
+
+.aside {
+  width: 13.5rem;
+  padding: 1.5rem;
+  background-color: #02AFFE;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.aside h3 {
+  padding: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+.aside p {
+  text-align: initial;
+}
+.aside a {
+  padding: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 65rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "header header header" "main   main   main" "footer footer footer";
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.6rem;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+.container .targeta {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.25s;
+}
+.container .targeta img {
+  width: 15rem;
+  height: auto;
+  width: 70%;
+}
+.container .targeta h4 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #f8af40;
+}
+.container .targeta p {
+  font-weight: 250;
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+.container .targeta a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+.container .targeta:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #ffffff;
+  /* font-style: italic; */
+  border-top: solid 2px #000;
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+  font-size: 20px;
+  justify-content: center;
+}
+.footer ol {
+  list-style: none;
+  display: flex;
+}
+.footer ol li a {
+  color: #000;
+  text-decoration: none;
+  padding: 1rem;
+  border-right: 1px solid #000;
+}
+
+.main__registro h1 {
+  color: #ffffff;
+  justify-content: center;
+  align-content: center;
+  font-size: 2.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  display: flex;
+  padding-top: 1.5rem;
+  margin-top: 0.3rem;
+}
+.main__registro .formularios {
+  display: flex;
+  justify-content: center;
+}
+.main__registro .formularios .form {
+  background-color: #ddb6f1;
+  width: 35%;
+  margin: 2rem;
+  justify-content: center;
+  min-width: 200px;
+  max-width: 600px;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.main__registro .formularios .form p {
+  color: #000;
+}
+.main__registro .formularios .form input {
+  padding: 0.15rem;
+  margin: 0.15rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  width: 100%;
+}
+.main__registro .formularios .form :focus {
+  outline: none;
+  border: 2px solid #f8af40;
+  border-radius: 2px;
+}
+
+.main .main__registro .formularios .form .form_1 {
+  color: #000;
+  font-size: 1rem;
+}
+.main .main__registro .formularios .form .form_1 p {
+  width: 100%;
+  color: #000;
+  font-size: larger;
+}
+
+.main .main__registro .formularios .form .form_2 {
+  color: #000;
+  font-size: 1rem;
+}
+.main .main__registro .formularios .form .form_2 p {
+  width: 100%;
+  color: #000;
+  font-size: larger;
+}
+.main .main__registro .formularios .form .form_2 .registrarse {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+.main .main__registro .formularios .form .form_2 .registrarse button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  border-style: none;
+  font-weight: 500;
+}
+
+.carruselesContacto {
+  justify-content: center;
+  width: 100%;
+  max-width: 27.5em;
+  padding: 1rem 0rem 1rem 0rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.ubicacionContainer {
+  margin-bottom: 1rem;
+  width: 70%;
+  max-width: 30.5em;
+}
+
+.ubicacion {
+  width: 100%;
+}
+
+.ubicacionTexto {
+  text-align: left;
+  color: #ffffff;
+}
+
+.ubicacionTexto p {
+  font-size: 1.5rem;
+}
+
+.ubicacionTexto h2 {
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .aside_container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  /* .main_contacto{
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+  } */
+  .aside {
+    width: 100%;
+  }
+
+  .header {
+    flex-direction: flex;
+    padding: 1rem;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+  }
+
+  .header nav ul li a {
+    border-right: none;
+    padding: 1rem;
+  }
+
+  .header nav {
+    padding-right: 0px;
+  }
+}/*# sourceMappingURL=main.css.map */
