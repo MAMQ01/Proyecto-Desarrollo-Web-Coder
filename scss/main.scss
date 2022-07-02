@@ -302,39 +302,62 @@ $colorRosaGD:      #ddb6f1;
 }
 
 
-.carruselesContacto{
-    justify-content: center;
+.mainContacto{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: 27.5em;
-    padding: 1rem 0rem 1rem 0rem;
-    margin: 1rem;
-    padding: 1rem;
+    margin-top: 0.3rem;
+    text-align: justify;
+    align-items: center;
+    .textoContacto{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        max-width: 37.5rem;
+        h1{
+            color: $colorBlanco;
+            justify-content: center;
+            align-content: center;
+            font-size: 2.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            display: flex;
+            padding-top: 1.5rem;
+            margin-top: 0.3rem;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .carruselesContacto{
+        justify-content: center;
+        width: 100%;
+        max-width: 27.5em;
+        padding: 1rem 0rem 1rem 0rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .ubicacionContainer{
+        margin-bottom: 1rem;
+        width: 70%;
+        max-width: 30.5em;
+        .ubicacion{
+            width: 100%;
+            .ubicacionTexto{
+                text-align: left;
+                color: $colorBlanco;
+                p{
+                    font-size: 1.5rem;
+                }
+                h2{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }
-
-
-.ubicacionContainer{
-    margin-bottom: 1rem;
-    width: 70%;
-    max-width: 30.5em;
-}
-
-.ubicacion{
-    width: 100%;
-}
-
-.ubicacionTexto{
-    text-align: left;
-    color: $colorBlanco;
-}
-
-.ubicacionTexto p{
-    font-size: 1.5rem;
-}
-
-.ubicacionTexto h2{
-    font-weight: 500;
-}
-
 
 
 
