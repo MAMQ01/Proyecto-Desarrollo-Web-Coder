@@ -351,11 +351,11 @@ $colorMorado:      #9c1ede;
                 color: $colorBlanco;
                 p{
                     font-size: 1.5rem;
-                    color: #000;
+                    color: $colorBlanco;
                 }
                 h2{
                     font-weight: 500;
-                    color: #000;
+                    color: $colorBlanco;
                 }
             }
         }
