@@ -315,9 +315,130 @@
 }
 .mainContacto .ubicacionContainer .ubicacion .ubicacionTexto p {
   font-size: 1.5rem;
+  color: #000;
 }
 .mainContacto .ubicacionContainer .ubicacion .ubicacionTexto h2 {
   font-weight: 500;
+  color: #000;
+}
+
+.mainPefil {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 35em;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 30px;
+  margin: 1rem;
+  box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.6);
+}
+.mainPefil header {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.mainPefil header img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px 0px 0px;
+}
+.mainPefil section {
+  background-color: #9c1ede;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+.mainPefil section h2 {
+  margin: 0.5em 0;
+  color: #ffffff;
+}
+.mainPefil section h3 {
+  color: #ffffff;
+}
+.mainPefil section p {
+  margin: 1em 0;
+  color: #ffffff;
+}
+.mainPefil section ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0.5em 0.2em;
+}
+.mainPefil section ul li a {
+  text-decoration: none;
+  background-color: #314652;
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px !important;
+  border-radius: 5px;
+  transition: all 0.17s ease-in-out;
+}
+.mainPefil section ul li a:hover {
+  transform: scale(1.3);
+}
+.mainPefil .footerPerfil {
+  width: 100%;
+  height: 60px;
+  background-color: #314652;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainProducto {
+  padding-top: 1rem;
+}
+.mainProducto .targetaPrecio {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8af40;
+  padding-bottom: 2rem;
+}
+.mainProducto .targetaPrecio h2 {
+  font-size: 1.5rem;
+  width: 60%;
+  background-color: #9c1ede;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.mainProducto .targetaPrecio h3 {
+  font-size: 1rem;
+}
+.mainProducto .targetaPrecio p {
+  font-size: 1rem;
+  padding: 0rem 2rem;
+}
+.mainProducto .targetaPrecio img {
+  width: 80%;
+}
+.mainProducto .filtrosProductos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mainProducto .filtrosProductos button {
+  padding: 0.5rem;
+  background-color: #ffffff;
+  font-size: 1rem;
+}
+.mainProducto .productos h1 {
+  font-size: 1rem;
+  color: #ffffff;
 }
 
 @media (max-width: 700px) {
